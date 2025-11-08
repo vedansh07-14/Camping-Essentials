@@ -1,7 +1,19 @@
 body{
-  background-image: url("pars-sahin-V7uP-XzqX18-unsplash.jpg");
+  background-image: url("./assets/pars-sahin-V7uP-XzqX18-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position:center
+  ;
+}
+.go-content{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-family: Poppins;
+
 }
 
 
@@ -11,7 +23,7 @@ nav ul {
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.3);
   padding: 10px;
-  border-radius: 8px;}
+  border-radius: 30px;}
 nav li {
   margin: 0 15px;
 }
@@ -35,14 +47,14 @@ nav a:hover {
 }
 #hero {
   padding: 40px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
   text-align: center;
 }
 
 .img_row{
   display: flex;
   justify-content:center ;
-  align-items:center;
+  align-content:center;
   flex-wrap: wrap; 
   gap: 15px;
 }
@@ -59,5 +71,152 @@ nav a:hover {
 .img_row img:hover {
   transform: scale(1.05);
 }
+.Essentials{
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-family: poppins;
+  text-align: center;
+}
+.Essentials .data{
+  font-size: 16px;
+  
+
+}
+a{
+  color: bisque;
+  font-weight:bold;
+}
+ul{
+  list-style: none;
+}
+
+.data{
+  text-align: left;
+  width: 700px;
+  padding-left: 400px;
+}
+.health{
+  width: 700px;
+  padding-left: 400px;
+  text-align: left;
+  font-size: 16px;
+}
+.health_img{
+  display: flex;
+  justify-content:center ;
+  align-content:center;
+  flex-wrap: wrap; 
+  gap: 40px;
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: 40px auto;
+  width: 90%;
+  border-radius: 12px;
+  overflow: hidden;
+   padding: 40px;
+  text-align: center;
+}
+.health_img img{
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.Tips{
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-family: poppins;
+  text-align: center;
 
 
+}
+.plan{
+  text-align: left;
+  width: 700px;
+  padding-left: 400px;
+  font-size: 16px;
+}
+b{
+  color: bisque;
+}
+footer {
+  background-color: #111;
+  color: #eee;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+
+.footer-section {
+  max-width: 300px;
+}
+
+.footer-section h3 {
+  color: #00b894;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-bottom {
+  font-size: 13px;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+  color: #aaa;
+}
+@media (max-width: 992px) {
+  .go-content h3 {
+    font-size: 2.5rem;
+  }
+  .data, .health, .plan {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    border-radius: 10px;
+  }
+  .go-content h3 {
+    font-size: 2rem;
+  }
+  .go-content h2 {
+    font-size: 1.1rem;
+  }
+  .img_row img, .health_img img {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-heading {
+    font-size: 1.8rem;
+  }
+  .go-content h3 {
+    font-size: 1.6rem;
+  }
+  footer {
+    padding: 20px;
+  }
+}
